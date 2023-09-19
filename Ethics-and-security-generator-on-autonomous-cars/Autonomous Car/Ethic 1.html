@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics in Autonomous Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="scrollFunction()">
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <!-- Dropdown for Judge -->
+        <div class="dropdown">
+            <button class="dropbtn">Judge 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ethicalscenario1.html">Ethics</a>
+                <a href="security.html">Security</a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay to create transparent background effect -->
+    <div class="overlay"></div>
+
+    <!-- Main content below the navigation bar -->
+    <div class="content">
+        <h1><u>Scenario: "The Security Dilemma in Your Self-Driving Car" </h1></u>
+        <p><strong><u>Setting:</strong></u> You're riding in your self-driving car on a crowded highway, enjoying a podcast while your autonomous vehicle handles the complexities of driving. The car is in fully autonomous mode and equipped with the latest security features, but it's programmed to alert you for important security decisions.</p>
+        <p><strong><u>Event:</strong></u> The vehicle suddenly notifies you with an urgent security alert: "Suspicious Activity Detected. Do you want to proceed to an alternate route?"</p>
+        <h2><u>Options for Action:</h2></u>
+        <ul>
+            <li><strong><u>Ignore and Continue:</strong></u> This is based on your previous security decisions, as it will leave the critical situation in your hands to decide.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 1 is offering you the choice, but its unclear how severe the risks are and if something goes wrong it will be your falut as you have made the decisions.</li>
+            <br/>
+            <li><strong><u>Switch to other route:</strong></u> This will allow the car to take a different route and take extra time of the user to reach their destination.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 2 is based on your past decisions which has built trust that the car will take the best Decision.</li>
+        </ul>
+
+        <!-- Image buttons within a container -->
+        <div class="image-container">
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="move.gif" alt="Image 1">
+            </div>
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="trust.gif" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <a href="javascript:void(0)" onclick="handleNextClick2()" class="next-button">END</a>
+    </div>
+     <!-- Popup window -->
+<div id="video-popup" class="popup">
+    <div class="popup-header">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+    </div>
+    <div class="popup-content">
+      <video id="video" controls loop>
+        <source src="Summary 2.mp4" type="video/mp4">
+      </video>
+      <p id="video-text"><strong><u>Summary:</strong></u> These choices shows that making a self-driving car safe and smart isn't just about technology. It's about the decisions of the people inside it. So, the car can take necessary decision based on the previous choices which it thinks is more suitable for the given conditions.
+      By working on security and ethics together, we can make self-driving cars more secure and safe and acceptable for the society.</p>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 YourCompany. All rights reserved.
+    </footer>
+</body>
+</html>

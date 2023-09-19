@@ -1,0 +1,294 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('44.png'); /* Background Image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: scroll;
+}
+
+/* Transparent overlay for the background */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Appear behind content */
+}
+
+/* Style for the horizontal navigation bar */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style for navigation links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color of text on hover */
+.navbar a:hover {
+    background-color: transparent;
+    color: rgb(7, 155, 205);
+}
+
+/* Heading on top of the page */
+h1 {
+    font-family: cursive;
+    background-color: none;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: orangered;
+}
+
+
+/* Description about Autonomous Cars */
+h2 {
+    font-size: 18px;
+    color: greenyellow;
+}
+
+/* Ethics and Security subheadings */
+h3 {
+    padding-top: 20px; /* space above the subheading */
+    color: green;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding: 20px 1%;
+}
+
+/* Border for Security section */
+h3.security {
+    border-top: 2px solid black;
+}
+
+/* Main content styling */
+.content {
+    padding: 15px;
+}
+
+/* Text color for paragraphs */
+.content p {
+    color: blueviolet;
+}
+
+/* List styling */
+.content ul {
+    margin: 0;
+}
+/* Color for list items */
+.content li {
+     color: yellowgreen;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transition: transform 0.3s;
+}
+
+/* Hide the footer on scroll */
+body.onscroll footer {
+    transform: translateY(100%);
+}
+/* Dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+/* Add a blue background color to navbar links on hover ans change text color to red */
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: blue;
+color: red;
+}
+
+/* Dropdown content container */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/* Styles for the image-containers */
+.image-display {
+    display: inline-block;
+    width: 20%; /* adjust the size to your liking */
+    margin: 2.5%;
+    position: relative;
+    cursor: default; /* removes the hand cursor */
+}
+
+
+/* Container to center the image buttons */
+.image-container img {
+    width: 300px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Optional: Add some margin around each image */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Optional: Add a subtle shadow for better framing */
+}
+
+
+/* Next button styling */
+.next-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    margin-left: 630px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    
+}
+
+.next-button:hover {
+    background-color: #8f30ca;
+}
+.image-button {
+    display: inline-block;
+    width: 35%;
+    margin: 2.5%;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.image-button.saved {
+    border: 2px solid red;
+}
+
+.image-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.selected {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.selected-green {
+    border: 2px solid green;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.con
+{
+    color: #8f30ca;
+    font-size: 4em;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+/* Styling for the popup window */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  
+  .popup-header {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .close-button {
+    font-size: 24px;
+    cursor: pointer;
+    color: aquamarine;
+  }
+  
+  .popup-content {
+    text-align: center;
+    margin-top: 100px;
+  }
+  /* Styling for the text discription in the popup window */
+  #video-text {
+    color: greenyellow; /* Setting to black for better visibility */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 10px auto; /* Centering horizontally */
+    padding: 10px;
+    text-align: justify;
+    width: 90%; /* You can adjust as needed */
+    max-width: 800px; /* Setting a maximum width */
+    word-wrap: break-word; /* To ensure long words don't overflow */
+    overflow: hidden; /* Hides overflow content */
+}
+
+
+
+
+  
+  

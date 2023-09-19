@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics in Autonomous Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="scrollFunction()">
+        
+      <div class="navbar">
+        <a href="Home.html">Home</a>
+        <!-- Dropdown for Judge -->
+        <div class="dropdown">
+            <button class="dropbtn">Judge 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ethicalscenario1.html">Ethics</a>
+                <a href="security.html">Security</a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay to create transparent background effect -->
+    <div class="overlay"></div>
+
+    <!-- Main content below the navigation bar -->
+    <div class="content">
+        <h1><u>Scenario: "The Emergency Divergence" </h1></u>
+        <p><strong><u>Setting:</strong></u> You're in your self-driving car, making your way through a city street. Your vehicle is set to fully autonomous mode, but like always, it can alert you for critical decisions. You're in the back seat, watching a movie on your device.</p>
+        <p><strong><u>Event:</strong></u> Suddenly, the car alerts you with an urgent message: "Emergency Vehicle Approaching. Option to Yield Required."</p>
+        <h2><u>Options for Action:</h2></u>
+        <ul>
+            <li><strong><u>Yield Immediately:</strong></u> This is based on your previous security decisions, as it will leave the critical situation in your hands to decide as yeilding will leave you stopeed in  high-crime area.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 1 is based on the algorithmic responsibility of the car which allows to yield emergency vehicles as quickly as possible, regardless of the potential risks to the passangers.</li>
+            <br/>
+            <li><strong><u>Proceed to Next Intersection: :</strong></u> This will allow the car to continue to the next intersection, thus delaying the emergency vehicle arrival.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 2 is based on your past decisions which has built trust that the car will take the best decision, but it will result in a negative outcome due to the delay of emergency Vehicle.</li>
+        </ul>
+
+        <!-- Image buttons within a container -->
+        <div class="image-container">
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="stop.gif" alt="Image 1">
+            </div>
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="stay.gif" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <a href="javascript:void(0)" onclick="handleNextClick2()" class="next-button">END</a>
+    </div>
+    <!-- Popup window -->
+<div id="video-popup" class="popup">
+    <div class="popup-header">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+    </div>
+    <div class="popup-content">
+      <video id="video" controls loop>
+        <source src="Summary 1.mp4" type="video/mp4">
+      </video>
+      <p id="video-text"><strong><u>Summary:</u></strong>The choices made to put the security into the hands of the professional rather than taking immediate actions will make the ethical-decision making algorithms of the car consider choices which cn be not in the favour od the situation.
+      Thus, the car might default to neglect quicker solutions and will le tthe security decisions in the hands of human exerts, thus empowring the vehicle to make smart choices when immediate action is required.</p>
+    </div>
+  </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 YourCompany. All rights reserved.
+    </footer>
+</body>
+
+</html>

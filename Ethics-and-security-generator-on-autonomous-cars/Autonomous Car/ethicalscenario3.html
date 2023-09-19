@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics in Autonomous Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="scrollFunction()">
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <!-- Dropdown for Judge -->
+        <div class="dropdown">
+            <button class="dropbtn">Judge 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ethicalscenario1.html">Ethics</a>
+                <a href="security.html">Security</a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay to create transparent background effect -->
+    <div class="overlay"></div>
+
+    <!-- Main content below the navigation bar -->
+    <div class="content">
+        <h1><u>Scenario 3: GPS Failure and Pedestrian Crossing Red Light</h1></u>
+        <p><strong><u>Setting:</strong></u>You are in an autonomous vehicle driving through a busy city street. The vehicle is in full autonomous mode, using GPS to navigate the complicated urban environment. As you approach an intersection, the dashboard suddenly flashes a warning: "GPS Signal Lost. Immediate Decision Required."
+            Almost simultaneously, you notice a pedestrian hastily crossing the street against a red light, directly in the path of your vehicle. The car detects the pedestrian but, without GPS, it is unsure of its exact positioning relative to the traffic lights and crosswalk.</p>
+        <h2><u>Options for Action:</h2></u>
+        <ul>
+            <li><strong><u>Immediate Stop
+            </strong></u>The vehicle can come to an immediate stop where it is, even though this might be in the middle of the intersection. This would most likely avoid hitting the pedestrian but could potentially result in a rear-end collision with vehicles following closely behind.
+        </li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 1 By stopping immediately, the vehicle prioritizes the safety of the pedestrian. However, this could lead to a rear-end collision from a vehicle following closely behind, potentially causing injury to both yourself and the occupants of the other vehicle.</li>
+            <br/>
+            <li><strong><u> Rely on Onboard Sensors</strong></u>The vehicle can ignore the GPS failure for a moment and rely solely on its onboard cameras and other sensors to attempt a more controlled, safe maneuver to avoid the pedestrian while also avoiding any collision with other vehicles. However, this is risky as the sensors were calibrated to work in conjunction with the GPS.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 2 This option seeks a balance, trying to avoid hitting the pedestrian while also minimizing the risk of a collision with other vehicles. However, since the onboard sensors were calibrated to work in conjunction with GPS, their effectiveness could be compromised, potentially leading to miscalculations and accidents.</li>
+        </ul>
+
+        <!-- Image buttons within a container -->
+        <div class="image-container">
+            <div>
+                <img src="op3.jpg" alt="Image 1">
+            </div>
+            <div>
+                <img src="op33.jpg" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <a href="javascript:void(0)" onclick="handleEndClick()" class="next-button">End</a>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 YourCompany. All rights reserved.
+    </footer>
+
+    
+   
+</body>
+
+</html>

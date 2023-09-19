@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security in Autonomous Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script1.js"></script>
+</head>
+
+<body onscroll="scrollFunction()">
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <!-- Dropdown for Judge -->
+        <div class="dropdown">
+            <button class="dropbtn">Judge 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ethicalscenario1.html">Ethics</a>
+                <a href="security.html">Security</a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay to create transparent background effect -->
+    <div class="overlay"></div>
+
+    <!-- Main content below the navigation bar -->
+    <div class="content">
+        <h1><u>Scenario 2: Ransomware Attack on an Autonomous Car in Motion</h1></u>
+        <p><strong><u>Setting:</strong></u>You're cruising down the highway in your state-of-the-art autonomous car. The journey has been smooth so far, and you're engrossed in a podcast playing through the car's audio system. the car is in full autonomous mode. </p>
+        <p><strong><u>Event:</strong></u> Suddenly, the podcast is interrupted, and the car expereiences sudden lock down of applications and understand that its a Ransomware attack and the attackers in trying to display a message.</p>
+        <h2><u>Options for Action:</h2></u>
+        <ul>
+            <li><strong><u>Alert You:</strong></u> This will alert you the message saying "Give $500 in bitcoin to regain control" and gives you option to Notify Bank and Credit Card Companies.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 1 will give user to take immediate action but alerting your bank and credit card companies could lead to frozen accounts, causing inconvenience and potential financial complications beyond the immediate ransomware issue.</li>
+            <br/>
+            <li><strong><u>Disable Connectivity:</strong></u>This will allow user to manual override on its controls and disconnect it from Wi-Fi or any other networks to prevent further data compromise. </li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 2 will disconnect the car from Wi-Fi or other networks to prevent further damage but could also disable features that are needed for diagnostics or emergency assistance from the manufacturer.</li>
+        </ul>
+
+        <!-- Image buttons within a container -->
+        <div class="image-container">
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="ransome.gif" alt="Image 1">
+            </div>
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="disable.gif" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <a href="javascript:void(0)" onclick="handleNextClick1()" class="next-button">Next</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 YourCompany. All rights reserved.
+    </footer>
+</body>
+
+</html>

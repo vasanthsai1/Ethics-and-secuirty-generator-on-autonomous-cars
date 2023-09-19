@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security in Autonomous Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script1.js"></script>
+</head>
+
+<body onscroll="scrollFunction()">
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <!-- Dropdown for Judge -->
+        <div class="dropdown">
+            <button class="dropbtn">Judge 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ethicalscenario1.html">Ethics</a>
+                <a href="security.html">Security</a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay to create transparent background effect -->
+    <div class="overlay"></div>
+
+    <!-- Main content below the navigation bar -->
+    <div class="content">
+        <h1><u>Scenario 1: GPS Spoofing in an Autonomous Car</h1></u>
+        <p><strong><u>Setting:</strong></u> You are in an autonomous car driving on a freeway. The car's dashboard shows that you are on track to reach your destination in 15 minutes. The car is currently operating under full autonomous mode.</p>
+        <p><strong><u>Event:</strong></u> Suddenly, the car expereiences some malfunction in its systems.</p>
+        <h2><u>Options for Action:</h2></u>
+        <ul>
+            <li><strong><u>Alert You:</strong></u> This will alert you about the car's current condition by showing a red signal on the dashboard of the car and will bring the car to a gradual stop and let the user take action.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 1 will give user to take immediate action but may be risky if the user is unaware of the GPS systems.</li>
+            <br/>
+            <li><strong><u>Alert Authority:</strong></u> If user choose this then local authority will know the current location of the car and will make arrangements to stop the car.</li>
+            <br/>
+            <li><strong><u>Risk:</strong></u> Option 2 puts the situation in the hand of professionals but it involves waiting and entails legal or procedural complexities.</li>
+        </ul>
+
+        <!-- Image buttons within a container -->
+        <div class="image-container">
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="GPS.gif" alt="Image 1">
+            </div>
+            <div class="image-button" onclick="toggleSave(this)">
+                <img src="Police.gif" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <a href="javascript:void(0)" onclick="handleNextClick()" class="next-button">Next</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 YourCompany. All rights reserved.
+    </footer>
+</body>
+
+</html>
